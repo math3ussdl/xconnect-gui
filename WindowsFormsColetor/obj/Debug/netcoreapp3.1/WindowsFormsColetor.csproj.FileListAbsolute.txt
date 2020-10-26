@@ -1,0 +1,17 @@
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\bin\Debug\netcoreapp3.1\WindowsFormsColetor.exe
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\bin\Debug\netcoreapp3.1\WindowsFormsColetor.dll.config
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\bin\Debug\netcoreapp3.1\WindowsFormsColetor.deps.json
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\bin\Debug\netcoreapp3.1\WindowsFormsColetor.runtimeconfig.json
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\bin\Debug\netcoreapp3.1\WindowsFormsColetor.runtimeconfig.dev.json
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\bin\Debug\netcoreapp3.1\WindowsFormsColetor.dll
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\bin\Debug\netcoreapp3.1\WindowsFormsColetor.pdb
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\obj\Debug\netcoreapp3.1\WindowsFormsColetor.csprojAssemblyReference.cache
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\obj\Debug\netcoreapp3.1\WindowsFormsColetor.csproj.GenerateResource.cache
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\obj\Debug\netcoreapp3.1\WindowsFormsColetor.AssemblyInfoInputs.cache
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\obj\Debug\netcoreapp3.1\WindowsFormsColetor.AssemblyInfo.cs
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\obj\Debug\netcoreapp3.1\WindowsFormsColetor.csproj.CoreCompileInputs.cache
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\obj\Debug\netcoreapp3.1\WindowsFormsColetor.dll
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\obj\Debug\netcoreapp3.1\WindowsFormsColetor.pdb
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\obj\Debug\netcoreapp3.1\WindowsFormsColetor.genruntimeconfig.cache
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\obj\Debug\netcoreapp3.1\WindowsFormsColetor.MDIForm.resources
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\obj\Debug\netcoreapp3.1\WindowsFormsColetor.Login.FormLogin.resources

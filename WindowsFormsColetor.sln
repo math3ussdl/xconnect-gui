@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsColetor", "WindowsFormsColetor\WindowsFormsColetor.csproj", "{42F8C71C-D314-4C74-88FD-C9C4B37B1482}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42F8C71C-D314-4C74-88FD-C9C4B37B1482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F8C71C-D314-4C74-88FD-C9C4B37B1482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F8C71C-D314-4C74-88FD-C9C4B37B1482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F8C71C-D314-4C74-88FD-C9C4B37B1482}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F54C855-F064-4447-A1CF-6F85CFCF73C8}
+	EndGlobalSection
+EndGlobal
