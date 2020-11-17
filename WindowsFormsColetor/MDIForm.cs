@@ -36,6 +36,30 @@ namespace WindowsFormsColetor
             //chama o formulário de login
             var formLogin = new FormLogin();
             formLogin.ShowDialog();
+
+            if (!formLogin.bFlagLogin) {
+                Application.Exit();
+            }
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void Sair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

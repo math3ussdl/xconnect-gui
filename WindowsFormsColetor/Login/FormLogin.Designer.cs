@@ -30,14 +30,14 @@
         {
             this.lblLogin = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
-            this.textLogin = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textSenha = new System.Windows.Forms.TextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblVersao = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxLogin = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +45,7 @@
             // 
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblLogin.Location = new System.Drawing.Point(93, 105);
+            this.lblLogin.Location = new System.Drawing.Point(93, 82);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(40, 15);
             this.lblLogin.TabIndex = 0;
@@ -55,50 +55,46 @@
             // 
             this.lblSenha.AutoSize = true;
             this.lblSenha.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSenha.Location = new System.Drawing.Point(93, 146);
+            this.lblSenha.Location = new System.Drawing.Point(93, 109);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(44, 15);
             this.lblSenha.TabIndex = 0;
             this.lblSenha.Text = "Senha:";
             // 
-            // textLogin
+            // textSenha
             // 
-            this.textLogin.Location = new System.Drawing.Point(139, 105);
-            this.textLogin.Name = "textLogin";
-            this.textLogin.Size = new System.Drawing.Size(193, 23);
-            this.textLogin.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(139, 143);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(193, 23);
-            this.textBox1.TabIndex = 2;
+            this.textSenha.Location = new System.Drawing.Point(139, 106);
+            this.textSenha.Name = "textSenha";
+            this.textSenha.PasswordChar = '*';
+            this.textSenha.Size = new System.Drawing.Size(193, 23);
+            this.textSenha.TabIndex = 2;
             // 
             // btnEntrar
             // 
-            this.btnEntrar.Location = new System.Drawing.Point(93, 187);
+            this.btnEntrar.Location = new System.Drawing.Point(93, 140);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(75, 23);
             this.btnEntrar.TabIndex = 3;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(257, 187);
+            this.btnSair.Location = new System.Drawing.Point(257, 140);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
             this.btnSair.TabIndex = 3;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.lblVersao);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(93, 235);
+            this.panel1.Location = new System.Drawing.Point(93, 182);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(239, 110);
             this.panel1.TabIndex = 4;
@@ -137,18 +133,26 @@
             this.label1.Text = "Sistema xConnect";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // comboBoxLogin
+            // 
+            this.comboBoxLogin.FormattingEnabled = true;
+            this.comboBoxLogin.Location = new System.Drawing.Point(139, 78);
+            this.comboBoxLogin.Name = "comboBoxLogin";
+            this.comboBoxLogin.Size = new System.Drawing.Size(193, 23);
+            this.comboBoxLogin.TabIndex = 5;
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(438, 337);
+            this.ClientSize = new System.Drawing.Size(418, 317);
             this.ControlBox = false;
+            this.Controls.Add(this.comboBoxLogin);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnEntrar);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textLogin);
+            this.Controls.Add(this.textSenha);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -168,13 +172,13 @@
 
         private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.Label lblSenha;
-        private System.Windows.Forms.TextBox textLogin;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textSenha;
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblVersao;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBoxLogin;
     }
 }
