@@ -32,6 +32,7 @@
             this.Arquivo = new System.Windows.Forms.ToolStripMenuItem();
             this.Sair = new System.Windows.Forms.ToolStripMenuItem();
             this.Cadastro = new System.Windows.Forms.ToolStripMenuItem();
+            this.subMenuUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.Rotina = new System.Windows.Forms.ToolStripMenuItem();
             this.Relatorio = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -69,9 +70,18 @@
             // 
             // Cadastro
             // 
+            this.Cadastro.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.subMenuUsuarios});
             this.Cadastro.Name = "Cadastro";
             this.Cadastro.Size = new System.Drawing.Size(71, 20);
             this.Cadastro.Text = "Cadastros";
+            // 
+            // subMenuUsuarios
+            // 
+            this.subMenuUsuarios.Name = "subMenuUsuarios";
+            this.subMenuUsuarios.Size = new System.Drawing.Size(119, 22);
+            this.subMenuUsuarios.Text = "Usuários";
+            this.subMenuUsuarios.Click += new System.EventHandler(this.subMenuUsuarios_Click);
             // 
             // Rotina
             // 
@@ -112,6 +122,7 @@
         private System.Windows.Forms.ToolStripMenuItem Cadastro;
         private System.Windows.Forms.ToolStripMenuItem Rotina;
         private System.Windows.Forms.ToolStripMenuItem Relatorio;
+        private System.Windows.Forms.ToolStripMenuItem subMenuUsuarios;
     }
 }
 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsColetor.Forms.Cadastro;
 using WindowsFormsColetor.Login;
 
 namespace WindowsFormsColetor
@@ -33,6 +34,8 @@ namespace WindowsFormsColetor
                 }
             }
 
+            menuStrip1.Visible = false;
+
             //chama o formulário de login
             var formLogin = new FormLogin();
             formLogin.ShowDialog();
@@ -40,6 +43,8 @@ namespace WindowsFormsColetor
             if (!formLogin.bFlagLogin) {
                 Application.Exit();
             }
+
+            menuStrip1.Visible = true;
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -60,6 +65,14 @@ namespace WindowsFormsColetor
         private void Sair_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void subMenuUsuarios_Click(object sender, EventArgs e)
+        {
+            //Chama o cadastro de usuários
+            var formUsuario = new FormCadastroUsuario();
+            formUsuario.ShowDialog();
+
         }
     }
 }
