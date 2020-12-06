@@ -58,6 +58,27 @@ namespace XConnectGUI.Services
 			}
 		}
 
+		public async Task<List<Donation>> GetApprovedDonations()
+		{
+			session = profileService.GetSession();
+
+			HttpResponseMessage response = await aPIService.HandleRequest("/donation/approved", HttpMethod.Get, token: session.Token);
+
+			if (response.IsSuccessStatusCode)
+			{
+				var respBody = await response.Content.ReadAsStringAsync();
+
+				var json = JsonConvert.DeserializeObject<List<Donation>>(respBody);
+
+				return json;
+			}
+
+			else
+			{
+				return new List<Donation>();
+			}
+		}
+
 		public async Task<Donation> GetDonation(string number)
 		{
 			session = profileService.GetSession();
@@ -119,6 +140,20 @@ namespace XConnectGUI.Services
 			if (response.IsSuccessStatusCode)
 			{
 				MessageBox.Show("Doação aceita com sucesso", "SUCESSO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+				form.Close();
+			}
+		}
+
+		public async void HandleSented(string targetId, Form form)
+		{
+			session = profileService.GetSession();
+
+			HttpResponseMessage response = await aPIService.HandleRequest($"/donation/{targetId}/sent", HttpMethod.Delete, token: session.Token);
+
+			if (response.IsSuccessStatusCode)
+			{
+				MessageBox.Show("Doação entregue ao destinatário", "SUCESSO", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 				form.Close();
 			}

@@ -36,6 +36,7 @@ namespace XConnectGUI
 			this.CadMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.donationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.AddToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.approvedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.contaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.DetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.ExitAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +49,6 @@ namespace XConnectGUI
 			this.donationLbl = new System.Windows.Forms.Label();
 			this.NewDonationBtn = new System.Windows.Forms.Button();
 			this.UpdateListBtn = new System.Windows.Forms.Button();
-			this.approvedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menu.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
 			this.SuspendLayout();
@@ -112,6 +112,14 @@ namespace XConnectGUI
 			this.AddToolStripMenuItem.Name = "AddToolStripMenuItem";
 			this.AddToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.AddToolStripMenuItem.Text = "Adicionar...";
+			// 
+			// approvedToolStripMenuItem
+			// 
+			this.approvedToolStripMenuItem.Name = "approvedToolStripMenuItem";
+			this.approvedToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.approvedToolStripMenuItem.Text = "Aprovadas";
+			this.approvedToolStripMenuItem.Visible = false;
+			this.approvedToolStripMenuItem.Click += new System.EventHandler(this.ApprovedToolStripMenuItem_Click);
 			// 
 			// contaToolStripMenuItem
 			// 
@@ -234,13 +242,6 @@ namespace XConnectGUI
 			this.UpdateListBtn.Text = "Atualizar...";
 			this.UpdateListBtn.UseVisualStyleBackColor = true;
 			this.UpdateListBtn.Click += new System.EventHandler(this.UpdateListBtn_Click);
-			// 
-			// approvedToolStripMenuItem
-			// 
-			this.approvedToolStripMenuItem.Name = "approvedToolStripMenuItem";
-			this.approvedToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.approvedToolStripMenuItem.Text = "Aprovadas";
-			this.approvedToolStripMenuItem.Click += new System.EventHandler(this.ApprovedToolStripMenuItem_Click);
 			// 
 			// MDIForm
 			// 

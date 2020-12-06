@@ -67,6 +67,12 @@
     <Compile Include="MDIForm.Designer.cs">
       <DependentUpon>MDIForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\ApprovedDonations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ApprovedDonations.Designer.cs">
+      <DependentUpon>ApprovedDonations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\DonationDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     <Compile Include="Services\ProfileService.cs" />
     <EmbeddedResource Include="MDIForm.resx">
       <DependentUpon>MDIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ApprovedDonations.resx">
+      <DependentUpon>ApprovedDonations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\DonationDetails.resx">
       <DependentUpon>DonationDetails.cs</DependentUpon>

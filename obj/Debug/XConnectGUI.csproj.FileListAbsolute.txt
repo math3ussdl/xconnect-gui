@@ -17,3 +17,4 @@ C:\Users\limabr\source\repos\XConnectGUI\bin\Debug\RestSharp.dll
 C:\Users\limabr\source\repos\XConnectGUI\bin\Debug\RestSharp.xml
 C:\Users\limabr\source\repos\XConnectGUI\obj\Debug\XConnectGUI.Screens.NewDonation.resources
 C:\Users\limabr\source\repos\XConnectGUI\obj\Debug\XConnectGUI.Screens.DonationDetails.resources
+C:\Users\limabr\source\repos\XConnectGUI\obj\Debug\XConnectGUI.Screens.ApprovedDonations.resources

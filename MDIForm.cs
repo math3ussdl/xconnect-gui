@@ -45,6 +45,7 @@ namespace XConnectGUI
 			{
 				donationLbl.Text = "Doações Disponíveis";
 				isONG = true;
+				approvedToolStripMenuItem.Visible = true;
 			}
 
 			menu.Visible = true;
@@ -181,9 +182,7 @@ namespace XConnectGUI
 
 		private void ApprovedToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			FeatureNotImplementedWarn();
-
-			// Get Donations Approved List (create a function)
+			new ApprovedDonations().ShowDialog();
 		}
 	}
 }

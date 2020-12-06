@@ -18,6 +18,7 @@ namespace XConnectGUI.Screens
 		private readonly bool isONG;
 
 		private readonly DonationService service = new DonationService();
+		private Donation donation;
 
 		public DonationDetails(string targetId, bool isONG = false)
 		{
@@ -30,7 +31,7 @@ namespace XConnectGUI.Screens
 
 		private async void DonationDetails_Load(object sender, EventArgs e)
 		{
-			Donation donation = await service.GetDonation(targetId);
+			donation = await service.GetDonation(targetId);
 
 			TitleBox.Text = donation.Title;
 			DescriptionBox.Text = donation.Description;
@@ -43,6 +44,19 @@ namespace XConnectGUI.Screens
 				DelBtn.Visible = false;
 				UpdateBtn.Location = DelBtn.Location;
 				UpdateBtn.AutoSize = true;
+
+				ProdDescLbl.Visible = false;
+				ProductDescBox.Visible = false;
+				ProdQuantLbl.Visible = false;
+				ProductQuantityBox.Visible = false;
+
+				ProductGridView.AutoSize = true;
+				ProductGridView.Location = new System.Drawing.Point(8, 148);
+			}
+
+			if (donation.Approved)
+			{
+				UpdateBtn.Text = "Sinalizar como entregue";
 			}
 
 			foreach (Product product in donation.Product)
@@ -93,7 +107,7 @@ namespace XConnectGUI.Screens
 
 		private void UpdateBtn_Click(object sender, EventArgs e)
 		{
-			if (isONG)
+			if (isONG && !donation.Approved)
 			{
 				const string message =
 				"Lembre-se que esta ação é irreversível";
@@ -103,6 +117,19 @@ namespace XConnectGUI.Screens
 				if (result == DialogResult.Yes)
 				{
 					service.HandleAccept(targetId, this);
+				}
+			}
+
+			else if (donation.Approved)
+			{
+				const string message =
+				"Lembre-se que esta ação é irreversível";
+				const string caption = "Você tem certeza?";
+				var result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+				if (result == DialogResult.Yes)
+				{
+					service.HandleSented(targetId, this);
 				}
 			}
 		}

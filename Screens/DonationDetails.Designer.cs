@@ -37,8 +37,8 @@ namespace XConnectGUI.Screens
 			this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.ProductQuantityBox = new System.Windows.Forms.ComboBox();
 			this.label7 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
+			this.ProdQuantLbl = new System.Windows.Forms.Label();
+			this.ProdDescLbl = new System.Windows.Forms.Label();
 			this.ProductDescBox = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.DescriptionBox = new System.Windows.Forms.TextBox();
@@ -54,7 +54,7 @@ namespace XConnectGUI.Screens
 			// 
 			this.UpProductBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.UpProductBtn.Location = new System.Drawing.Point(13, 342);
-			this.UpProductBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.UpProductBtn.Margin = new System.Windows.Forms.Padding(2);
 			this.UpProductBtn.Name = "UpProductBtn";
 			this.UpProductBtn.Size = new System.Drawing.Size(109, 29);
 			this.UpProductBtn.TabIndex = 74;
@@ -76,7 +76,7 @@ namespace XConnectGUI.Screens
             "9",
             "10"});
 			this.QuantityBox.Location = new System.Drawing.Point(13, 75);
-			this.QuantityBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.QuantityBox.Margin = new System.Windows.Forms.Padding(2);
 			this.QuantityBox.Name = "QuantityBox";
 			this.QuantityBox.Size = new System.Drawing.Size(238, 21);
 			this.QuantityBox.TabIndex = 73;
@@ -96,12 +96,15 @@ namespace XConnectGUI.Screens
 			// 
 			this.ProductGridView.AllowUserToAddRows = false;
 			this.ProductGridView.AllowUserToDeleteRows = false;
+			this.ProductGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.ProductGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.ProductGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.description,
             this.quantity});
 			this.ProductGridView.Location = new System.Drawing.Point(13, 197);
-			this.ProductGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.ProductGridView.Margin = new System.Windows.Forms.Padding(2);
 			this.ProductGridView.Name = "ProductGridView";
 			this.ProductGridView.ReadOnly = true;
 			this.ProductGridView.RowHeadersWidth = 62;
@@ -142,7 +145,7 @@ namespace XConnectGUI.Screens
             "9",
             "10"});
 			this.ProductQuantityBox.Location = new System.Drawing.Point(287, 169);
-			this.ProductQuantityBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.ProductQuantityBox.Margin = new System.Windows.Forms.Padding(2);
 			this.ProductQuantityBox.Name = "ProductQuantityBox";
 			this.ProductQuantityBox.Size = new System.Drawing.Size(238, 21);
 			this.ProductQuantityBox.TabIndex = 69;
@@ -158,32 +161,32 @@ namespace XConnectGUI.Screens
 			this.label7.TabIndex = 68;
 			this.label7.Text = "Produtos";
 			// 
-			// label6
+			// ProdQuantLbl
 			// 
-			this.label6.AutoSize = true;
-			this.label6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.Location = new System.Drawing.Point(283, 148);
-			this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(81, 19);
-			this.label6.TabIndex = 66;
-			this.label6.Text = "Quantidade";
+			this.ProdQuantLbl.AutoSize = true;
+			this.ProdQuantLbl.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.ProdQuantLbl.Location = new System.Drawing.Point(283, 148);
+			this.ProdQuantLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.ProdQuantLbl.Name = "ProdQuantLbl";
+			this.ProdQuantLbl.Size = new System.Drawing.Size(81, 19);
+			this.ProdQuantLbl.TabIndex = 66;
+			this.ProdQuantLbl.Text = "Quantidade";
 			// 
-			// label4
+			// ProdDescLbl
 			// 
-			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(8, 148);
-			this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(67, 19);
-			this.label4.TabIndex = 63;
-			this.label4.Text = "Descrição";
+			this.ProdDescLbl.AutoSize = true;
+			this.ProdDescLbl.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.ProdDescLbl.Location = new System.Drawing.Point(8, 148);
+			this.ProdDescLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.ProdDescLbl.Name = "ProdDescLbl";
+			this.ProdDescLbl.Size = new System.Drawing.Size(67, 19);
+			this.ProdDescLbl.TabIndex = 63;
+			this.ProdDescLbl.Text = "Descrição";
 			// 
 			// ProductDescBox
 			// 
 			this.ProductDescBox.Location = new System.Drawing.Point(11, 170);
-			this.ProductDescBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.ProductDescBox.Margin = new System.Windows.Forms.Padding(2);
 			this.ProductDescBox.Name = "ProductDescBox";
 			this.ProductDescBox.Size = new System.Drawing.Size(238, 20);
 			this.ProductDescBox.TabIndex = 64;
@@ -202,7 +205,7 @@ namespace XConnectGUI.Screens
 			// DescriptionBox
 			// 
 			this.DescriptionBox.Location = new System.Drawing.Point(287, 30);
-			this.DescriptionBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.DescriptionBox.Margin = new System.Windows.Forms.Padding(2);
 			this.DescriptionBox.Multiline = true;
 			this.DescriptionBox.Name = "DescriptionBox";
 			this.DescriptionBox.Size = new System.Drawing.Size(238, 74);
@@ -222,7 +225,7 @@ namespace XConnectGUI.Screens
 			// TitleBox
 			// 
 			this.TitleBox.Location = new System.Drawing.Point(11, 30);
-			this.TitleBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.TitleBox.Margin = new System.Windows.Forms.Padding(2);
 			this.TitleBox.Name = "TitleBox";
 			this.TitleBox.Size = new System.Drawing.Size(238, 20);
 			this.TitleBox.TabIndex = 58;
@@ -231,7 +234,7 @@ namespace XConnectGUI.Screens
 			// 
 			this.UpdateBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.UpdateBtn.Location = new System.Drawing.Point(288, 342);
-			this.UpdateBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.UpdateBtn.Margin = new System.Windows.Forms.Padding(2);
 			this.UpdateBtn.Name = "UpdateBtn";
 			this.UpdateBtn.Size = new System.Drawing.Size(66, 29);
 			this.UpdateBtn.TabIndex = 56;
@@ -243,7 +246,7 @@ namespace XConnectGUI.Screens
 			// 
 			this.CancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.CancelBtn.Location = new System.Drawing.Point(459, 342);
-			this.CancelBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.CancelBtn.Margin = new System.Windows.Forms.Padding(2);
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(66, 29);
 			this.CancelBtn.TabIndex = 54;
@@ -255,7 +258,7 @@ namespace XConnectGUI.Screens
 			// 
 			this.DelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.DelBtn.Location = new System.Drawing.Point(358, 342);
-			this.DelBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.DelBtn.Margin = new System.Windows.Forms.Padding(2);
 			this.DelBtn.Name = "DelBtn";
 			this.DelBtn.Size = new System.Drawing.Size(97, 29);
 			this.DelBtn.TabIndex = 75;
@@ -275,8 +278,8 @@ namespace XConnectGUI.Screens
 			this.Controls.Add(this.ProductGridView);
 			this.Controls.Add(this.ProductQuantityBox);
 			this.Controls.Add(this.label7);
-			this.Controls.Add(this.label6);
-			this.Controls.Add(this.label4);
+			this.Controls.Add(this.ProdQuantLbl);
+			this.Controls.Add(this.ProdDescLbl);
 			this.Controls.Add(this.ProductDescBox);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.DescriptionBox);
@@ -284,7 +287,7 @@ namespace XConnectGUI.Screens
 			this.Controls.Add(this.TitleBox);
 			this.Controls.Add(this.UpdateBtn);
 			this.Controls.Add(this.CancelBtn);
-			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "DonationDetails";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "DonationDetails";
@@ -305,8 +308,8 @@ namespace XConnectGUI.Screens
 		private System.Windows.Forms.DataGridViewTextBoxColumn quantity;
 		private System.Windows.Forms.ComboBox ProductQuantityBox;
 		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Label ProdQuantLbl;
+		private System.Windows.Forms.Label ProdDescLbl;
 		private System.Windows.Forms.TextBox ProductDescBox;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.TextBox DescriptionBox;
