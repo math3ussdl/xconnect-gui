@@ -1,0 +1,21 @@
+{
+  "auth": true,
+  "user": {
+    "cnpj": "12345678945111    ",
+    "is_active": false,
+    "picture": "",
+    "hashdelete": "",
+    "address": "Rua Solimões",
+    "name": "APAD",
+    "email": "basl.dev1609@gmail.com",
+    "password": "$2a$12$t0uP2IJAXAUkFiTqIHE6jejID1bIEpYdfnk96.CB0Yi1n7RmJUSr2",
+    "number": "568",
+    "complement": "Lotto Irineu Teixeira",
+    "neighborhood": "Capibaribe",
+    "city": "Recife",
+    "state": "Pernambuco",
+    "zip": "54705987 ",
+    "phone": "81984561234"
+  },
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbnBqIjoiMTIzNDU2Nzg5NDUxMTEgICAgIiwiaWF0IjoxNjA3MjE5MDg5LCJleHAiOjE2MDcyMjI2ODl9.9UUjOFqx2tE1JlTj7N4m8BfxDyxDaSW6SXRqTQLe13o"
+}
