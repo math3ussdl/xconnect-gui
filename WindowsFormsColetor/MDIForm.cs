@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsColetor.Forms.Cadastro;
+using WindowsFormsColetor.Forms.Operacao;
 using WindowsFormsColetor.Login;
 
 namespace WindowsFormsColetor
@@ -73,6 +74,20 @@ namespace WindowsFormsColetor
             var formUsuario = new FormCadastroUsuario();
             formUsuario.ShowDialog();
 
+        }
+
+        private void subMenuProdutos_Click(object sender, EventArgs e)
+        {
+            //Chama o cadastro de produtos
+            var formProduto = new FormCadastroProduto();
+            formProduto.ShowDialog();
+        }
+
+        private void subMenuDoar_Click(object sender, EventArgs e)
+        {
+            //Chama o formulario de doacao
+            var formDoacao = new FormDoacao();
+            formDoacao.ShowDialog();
         }
     }
 }

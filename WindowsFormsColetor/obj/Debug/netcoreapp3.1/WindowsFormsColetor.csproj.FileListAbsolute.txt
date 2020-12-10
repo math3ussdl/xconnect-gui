@@ -16,3 +16,5 @@ C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\obj\Debug\netc
 C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\obj\Debug\netcoreapp3.1\WindowsFormsColetor.MDIForm.resources
 C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\obj\Debug\netcoreapp3.1\WindowsFormsColetor.Login.FormLogin.resources
 C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\obj\Debug\netcoreapp3.1\WindowsFormsColetor.Forms.Cadastro.FormCadastroUsuario.resources
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\obj\Debug\netcoreapp3.1\WindowsFormsColetor.Forms.Cadastro.FormCadastroProduto.resources
+C:\Users\jlv\source\repos\WindowsFormsColetor\WindowsFormsColetor\obj\Debug\netcoreapp3.1\WindowsFormsColetor.Forms.Operacao.FormDoacao.resources

@@ -33,7 +33,9 @@
             this.Sair = new System.Windows.Forms.ToolStripMenuItem();
             this.Cadastro = new System.Windows.Forms.ToolStripMenuItem();
             this.subMenuUsuarios = new System.Windows.Forms.ToolStripMenuItem();
-            this.Rotina = new System.Windows.Forms.ToolStripMenuItem();
+            this.subMenuProdutos = new System.Windows.Forms.ToolStripMenuItem();
+            this.Operacao = new System.Windows.Forms.ToolStripMenuItem();
+            this.subMenuDoar = new System.Windows.Forms.ToolStripMenuItem();
             this.Relatorio = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -44,14 +46,14 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Arquivo,
             this.Cadastro,
-            this.Rotina,
+            this.Operacao,
             this.Relatorio});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(895, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "Arquivo";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked_1);
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip2_ItemClicked);
             // 
             // Arquivo
             // 
@@ -71,7 +73,8 @@
             // Cadastro
             // 
             this.Cadastro.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.subMenuUsuarios});
+            this.subMenuUsuarios,
+            this.subMenuProdutos});
             this.Cadastro.Name = "Cadastro";
             this.Cadastro.Size = new System.Drawing.Size(71, 20);
             this.Cadastro.Text = "Cadastros";
@@ -79,15 +82,31 @@
             // subMenuUsuarios
             // 
             this.subMenuUsuarios.Name = "subMenuUsuarios";
-            this.subMenuUsuarios.Size = new System.Drawing.Size(119, 22);
+            this.subMenuUsuarios.Size = new System.Drawing.Size(122, 22);
             this.subMenuUsuarios.Text = "Usuários";
             this.subMenuUsuarios.Click += new System.EventHandler(this.subMenuUsuarios_Click);
             // 
-            // Rotina
+            // subMenuProdutos
             // 
-            this.Rotina.Name = "Rotina";
-            this.Rotina.Size = new System.Drawing.Size(58, 20);
-            this.Rotina.Text = "Rotinas";
+            this.subMenuProdutos.Name = "subMenuProdutos";
+            this.subMenuProdutos.Size = new System.Drawing.Size(122, 22);
+            this.subMenuProdutos.Text = "Produtos";
+            this.subMenuProdutos.Click += new System.EventHandler(this.subMenuProdutos_Click);
+            // 
+            // Operacao
+            // 
+            this.Operacao.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.subMenuDoar});
+            this.Operacao.Name = "Operacao";
+            this.Operacao.Size = new System.Drawing.Size(75, 20);
+            this.Operacao.Text = "Operações";
+            // 
+            // subMenuDoar
+            // 
+            this.subMenuDoar.Name = "subMenuDoar";
+            this.subMenuDoar.Size = new System.Drawing.Size(99, 22);
+            this.subMenuDoar.Text = "Doar";
+            this.subMenuDoar.Click += new System.EventHandler(this.subMenuDoar_Click);
             // 
             // Relatorio
             // 
@@ -120,9 +139,11 @@
         private System.Windows.Forms.ToolStripMenuItem Arquivo;
         private System.Windows.Forms.ToolStripMenuItem Sair;
         private System.Windows.Forms.ToolStripMenuItem Cadastro;
-        private System.Windows.Forms.ToolStripMenuItem Rotina;
+        private System.Windows.Forms.ToolStripMenuItem Operacao;
         private System.Windows.Forms.ToolStripMenuItem Relatorio;
         private System.Windows.Forms.ToolStripMenuItem subMenuUsuarios;
+        private System.Windows.Forms.ToolStripMenuItem subMenuProdutos;
+        private System.Windows.Forms.ToolStripMenuItem subMenuDoar;
     }
 }
 
